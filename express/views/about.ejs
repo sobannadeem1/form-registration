@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .content {
+      padding: 20px;
+    }
+
+    .content h1 {
+      color: #333;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .content a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <header><%-include("./navbar.ejs")%></header>
+    <main>
+      <div class="content">
+        <h1>About Us</h1>
+        <p>
+          Welcome to the Form Registration application. This app is designed to
+          help users easily register and manage their forms. Our goal is to
+          provide a simple and efficient registration process.
+        </p>
+        <p>
+          If you have any questions or need support, please contact us at:
+          <a href="mailto:support@formregistrationapp.com"
+            >support@formregistrationapp.com</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <footer><%-include('./footer.ejs')%></footer>
+    </footer>
+  </body>
+</html>
